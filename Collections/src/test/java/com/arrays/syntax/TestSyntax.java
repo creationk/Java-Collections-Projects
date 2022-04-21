@@ -4,12 +4,17 @@ import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
 
 @Slf4j
-public class TestSyntax {
+class TestSyntax {
     @Test
     void testSyntax() {
         int[] a;
+
         int b[];
+
         int [] c,d; //c and d are both arrays
+        //int m[],[]n; //not allowed
+
+        int m[],n[];
 
         int e[],f; //f is an int
 
