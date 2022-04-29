@@ -1,4 +1,4 @@
-package com.arrays.types;
+package com.arrays.basics.types;
 
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;

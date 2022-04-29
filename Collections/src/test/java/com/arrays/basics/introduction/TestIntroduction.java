@@ -1,10 +1,16 @@
-package com.arrays.introduction;
+package com.arrays.basics.introduction;
 
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
 
 @Slf4j
 class TestIntroduction {
+    /**
+     * Items in the array are located right next to each other in the main memory
+     * For this reason, they can be accessed by the index
+     * Memory address of an element = array's address + index + data size(for eg: 4 bytes if an int)
+     * Advantage -> Random access feature -> Running time is O(1)
+     */
     @Test
     void test1DArray() {
         //int array x = new int array having 5 values
