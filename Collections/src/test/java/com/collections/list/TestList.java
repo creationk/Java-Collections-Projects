@@ -9,6 +9,7 @@ import java.util.*;
 public class TestList {
     @Test
     void testArrayList() {//Creating ArrayList
+        Collection c = new ArrayList();
         ArrayList al = new ArrayList();
 
         //creating ArrayList with specifying size
