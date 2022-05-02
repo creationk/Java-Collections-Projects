@@ -13,7 +13,7 @@ public class TestList {
         ArrayList al = new ArrayList();
 
         //creating ArrayList with specifying size
-        ArrayList aList =  new ArrayList(30);
+        ArrayList aList = new ArrayList(30);
 
 		/*creating ArrayList with specified collection.
 		ArrayList aList1 = new ArrayList(Collection c);*/
@@ -22,14 +22,14 @@ public class TestList {
         al.add("John");
         al.add(true);
         al.add(10);
-        System.out.println(al);
+        log.info(String.valueOf(al));
 
         //removing element from ArrayList
-        al.remove(new Integer(10));
-        System.out.println(al);
+        al.remove(Integer.valueOf(10)); //if an int is passed, it will remove the element at that position rather than the element itself
+        log.info(String.valueOf(al));
 
         //To get value from ArrayList and print
-        System.out.println(al.get(1));
+        log.info((String) al.get(1));
 
         //To get value from ArrayList (we need to perform typecasting here)
         //boolean b = al.get(1);
@@ -39,7 +39,7 @@ public class TestList {
 
         ArrayList<Integer> test = new ArrayList<>(0);
         test.add(1);
-        System.out.println(test.size());
+        log.info(String.valueOf(test.size()));
 
         ArrayList<Number> nal = new ArrayList<>();
         byte b = 3;
@@ -49,13 +49,13 @@ public class TestList {
         nal.add(b);
         nal.add(l);
 
-        System.out.println(nal);
+        log.info(String.valueOf(nal));
     }
 
     @Test
     void testArrayToList() {
-        Integer [] arr = {1,2,3};
-        List <Integer> l = Arrays.asList(arr);
+        Integer[] arr = {1, 2, 3};
+        List<Integer> l = Arrays.asList(arr);
         arr = (Integer[]) l.toArray();
         System.out.println(Arrays.toString(arr));
     }
@@ -90,6 +90,7 @@ public class TestList {
         //to add element at first position
         l.addFirst(1);
         System.out.println(l);
+
     }
 
     @Test
@@ -103,7 +104,7 @@ public class TestList {
         Vector vec = new Vector(60);
 
         //creating vector with specified capacity and incremental capacity
-        Vector vec1 = new Vector(100,5);
+        Vector vec1 = new Vector(100, 5);
 
         //creating vector with specified collection
         //Vector vec2 = new Vector(Collection c);
@@ -138,7 +139,7 @@ public class TestList {
         s.push(4);
         s.push(4);
 
-        s.insertElementAt(1,0);
+        s.insertElementAt(1, 0);
 
         System.out.println(s.peek());
         System.out.println(s.search(4));

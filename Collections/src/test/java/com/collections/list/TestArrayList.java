@@ -67,17 +67,17 @@ class TestArrayList {
 
     @Test
     void testAddAll() {
-        List <Integer> tempList = new ArrayList<>(l);
+        List<Integer> tempList = new ArrayList<>(l);
         List<Integer> nL = new ArrayList<>(Arrays.asList(31, 32, 33));
         log.info("Adding {} to {} with the result {}", nL, l, tempList.addAll(nL));
     }
 
     @Test
     void testRemoveAll() {
-        List <Integer> tempList = new ArrayList<>(l);
-        List<Integer> nL = new ArrayList<>(Arrays.asList(1,2,3));
-        List<Integer> nL2 = new ArrayList<>(Arrays.asList(7,8,9));
-        List<Integer> nL3 = new ArrayList<>(Arrays.asList(8,9,10));
+        List<Integer> tempList = new ArrayList<>(l);
+        List<Integer> nL = new ArrayList<>(Arrays.asList(1, 2, 3));
+        List<Integer> nL2 = new ArrayList<>(Arrays.asList(7, 8, 9));
+        List<Integer> nL3 = new ArrayList<>(Arrays.asList(8, 9, 10));
 
         log.info("Removing {} from {} with the result {}", nL, l, tempList.removeAll(nL));
         log.info("Removing {} from {} with the result {}", nL2, l, tempList.removeAll(nL2));
