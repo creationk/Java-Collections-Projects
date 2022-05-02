@@ -53,8 +53,8 @@ class TestIntroduction {
         y[0] = new int[2];
         y[1] = new int[5]; //no error
         y[1][4] = 5;
-        log.info(y[1][4]+"");
-        
+        log.info(y[1][4] + "");
+
     }
 
 }

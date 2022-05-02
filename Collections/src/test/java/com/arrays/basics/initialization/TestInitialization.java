@@ -36,11 +36,11 @@ class TestInitialization {
             log.info(Arrays.toString(i));
         }
 
-        int [][]tw = new int[][]{{1},{2,3},{4,5,6}};
+        int[][] tw = new int[][]{{1}, {2, 3}, {4, 5, 6}};
 
-        for (int[] i: tw){
-            for(int j: i){
-                log.info("int[i][j]={}",j);
+        for (int[] i : tw) {
+            for (int j : i) {
+                log.info("int[i][j]={}", j);
             }
         }
 

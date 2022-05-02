@@ -14,7 +14,7 @@ class TestAnonymousArrays {
         int result2 = doSomeOperation(new int[2]); //new int[2] is not assigned any variable reference. It is hence an anonymous array.
         //In this case, all elements of int[2] and initialized to the default value 0
 
-        log.info("Results 1 and 2 -> {}, {}",result1, result2);
+        log.info("Results 1 and 2 -> {}, {}", result1, result2);
 
     }
 

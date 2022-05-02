@@ -17,7 +17,7 @@ class TestTypes {
 
         int[] x = new int[3];
         x[0] = 'a';
-        log.info("a = {}",x[0]);
+        log.info("a = {}", x[0]);
         //adding char in int array, it can be promoted to int
 
         byte b = 2;
@@ -25,7 +25,7 @@ class TestTypes {
 
         //byte and char can be promoted to int
 
-        char[] y= new char[]{'y'};
+        char[] y = new char[]{'y'};
     }
 
     @Test
@@ -45,6 +45,7 @@ class TestTypes {
         log.info(objArray[2].getClass().getName());
 
     }
+
     @Test
     void testAbstractTypeArray() {
         //Abstract class type arrays
@@ -57,10 +58,10 @@ class TestTypes {
         numArray[3] = Float.valueOf("4");
         numArray[4] = Double.valueOf("5");
 
-        log.info("Arrays.toString(numArray) = {}",Arrays.toString(numArray));
+        log.info("Arrays.toString(numArray) = {}", Arrays.toString(numArray));
 
-        for (Number num: numArray){
-            log.info("Type = {}",num.getClass());
+        for (Number num : numArray) {
+            log.info("Type = {}", num.getClass());
         }
     }
 

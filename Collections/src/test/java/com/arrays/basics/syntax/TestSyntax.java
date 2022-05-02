@@ -11,14 +11,14 @@ class TestSyntax {
 
         int b[];
 
-        int [] c,d; //c and d are both arrays
+        int[] c, d; //c and d are both arrays
         //int m[],[]n; //not allowed
 
-        int m[],n[];
+        int m[], n[];
 
-        int e[],f; //f is an int
+        int e[], f; //f is an int
 
-        int [] g,h[]; //h is a two dimensional array
+        int[] g, h[]; //h is a two dimensional array
 
         h = new int[][]{{}};
 
